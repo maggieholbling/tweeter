@@ -8,6 +8,7 @@ html {
   --main-dark-grey: #545149;
   --bg-color: #f4f1ec;
   --main-blue: #4056A1;
+  --main-light-grey: rgb(204, 203, 203);
   box-sizing: border-box;
 }
 *, *:before, *:after {
@@ -28,10 +29,22 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
+ 
 .spacer {
   width: 100%;
   height: 120px;
+}
+
+.clear {
+  clear: both;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
 }
 
 main {

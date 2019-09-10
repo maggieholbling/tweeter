@@ -1,5 +1,4 @@
 input {
-  float: left;
   background-color: var(--main-blue);
   font-family: 'Bungee', cursive;
   color: white;
@@ -19,11 +18,11 @@ textarea {
   resize: none;
 }
 
-section span {
-  float: right;
-}
-
 ::placeholder {
   color: var(--main-dark-grey);
   opacity: 1;
+}
+
+.counter {
+  font-family: 'Bungee', cursive;
 }

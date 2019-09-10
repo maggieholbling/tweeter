@@ -1,4 +1,4 @@
-header {
+header.profile {
   height: 400px;
   width: 100%;
   background-color:rgb(222, 128, 9, 0.8);
@@ -7,6 +7,6 @@ header {
   text-align: center;
 }
 
-header h2 {
+header.profile h2 {
   color: white;
 }
