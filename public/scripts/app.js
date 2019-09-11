@@ -43,6 +43,7 @@ $(document).ready(function() {
   };
 
   const loadTweets = () => {
+    $('form textarea').val("");
     $.ajax('/tweets')
     .then(renderTweets)
     // .catch(err => {
@@ -56,7 +57,6 @@ $(document).ready(function() {
   $('form').on('submit', function(event) {
     event.preventDefault();
     formData = $(this).serialize();
-    console.log(formData);
 
     $.ajax('/tweets', {
       method: 'POST',
