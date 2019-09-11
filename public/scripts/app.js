@@ -56,6 +56,10 @@ $(document).ready(function() {
   //Hijacking form
   $('form').on('submit', function(event) {
     event.preventDefault();
+    $('.new-tweet .left p')
+      .text('')
+      .css("display", "none")
+
     if (!$('form textarea').val()) {
       $('.new-tweet .left p')
       .text('No tweet entered')
