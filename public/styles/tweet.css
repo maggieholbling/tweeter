@@ -28,12 +28,7 @@
   font-size: 20px;
 }
 
-.tweet .left img {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.tweet .left p {
+.tweet .left img, .tweet .left p {
   display: inline-block;
   vertical-align: middle;
 }
