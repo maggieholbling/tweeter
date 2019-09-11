@@ -56,6 +56,22 @@ $(document).ready(function() {
   //Hijacking form
   $('form').on('submit', function(event) {
     event.preventDefault();
+    if (!$('form textarea').val()) {
+      $('.new-tweet .left p')
+      .text('No tweet entered')
+      .css("display", "inline-block")
+
+      return;
+    }
+
+    if ($('form textarea').val().length > 140) {
+      $('.new-tweet .left p')
+      .text('Max length exceeded')
+      .css("display", "inline-block")
+      return;
+    }
+    //check
+    //.new-tweet .left p - display: inline-block;
     formData = $(this).serialize();
 
     $.ajax('/tweets', {

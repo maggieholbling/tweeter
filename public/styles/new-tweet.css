@@ -1,9 +1,19 @@
 input {
+  display: inline-block;
+  vertical-align: middle;
   background-color: var(--main-blue);
   font-family: 'Bungee', cursive;
   color: white;
   border: none;
   padding: 5px 10px;
+}
+
+.new-tweet .left p{
+  margin: 0;
+  display: none;
+  vertical-align: middle;
+  color: red;
+  font-weight: 600;
 }
 
 textarea {
