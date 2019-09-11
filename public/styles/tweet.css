@@ -4,7 +4,15 @@
   border: 5px solid var(--main-dark-grey);
 }
 
-.tweet-text {
+.tweet:hover {
+  box-shadow: 7px 7px 5px var(--main-blue);
+}
+
+.tweet:hover .right.hidden{
+  visibility: visible;
+}
+
+.tweet .tweet-text {
   padding: 20px 13px;
   border-bottom: 5px solid var(--main-dark-grey);
   text-align: left;
@@ -13,17 +21,18 @@
 .tweet p {
   margin: 0;
 }
+
 .tweet header .left {
   padding: 8px 13px 0 3px;
   font-size: 20px;
 }
 
-.left img {
+.tweet .left img {
   display: inline-block;
   vertical-align: middle;
 }
 
-.left p {
+.tweet .left p {
   display: inline-block;
   vertical-align: middle;
 }
