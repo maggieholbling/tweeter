@@ -1,12 +1,18 @@
 $(document).ready(function() {
 
+  const escape = (userData) => {
+    let div = document.createElement('div');
+    div.appendChild(document.createTextNode(userData));
+    return div.innerHTML;
+  };
+
   const createTweetElement = function(object) {
     const name = object.user.name;
     const avatars = object.user.avatars;
     const handle = object.user.handle;
     const text = object.content.text;
     const timestamp = Math.round((Date.now() - object.created_at) / (1000*60*60*24));
-  
+    
     const article = $(
     `<article class="tweet">
     <header>
@@ -19,7 +25,7 @@ $(document).ready(function() {
       </div>
     </header>
     <div class="clear"></div>
-    <p class ="tweet-text">${text}</p>
+    <p class ="tweet-text">${escape(text)}</p>
     <footer>
       <div class="left">
         <p>${timestamp} days ago</p>
