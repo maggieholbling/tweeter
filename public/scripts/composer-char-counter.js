@@ -32,6 +32,4 @@ $(document).ready(function() {
 
     $(this).nextAll('.counter').text(remainingChars);
   });
-
-  140
 });
