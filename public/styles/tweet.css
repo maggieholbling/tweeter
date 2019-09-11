@@ -16,6 +16,7 @@
   padding: 20px 13px;
   border-bottom: 5px solid var(--main-dark-grey);
   text-align: left;
+  overflow: auto;
 }
 
 .tweet p {
