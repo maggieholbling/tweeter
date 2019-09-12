@@ -4,11 +4,27 @@ nav {
   width: 100%;
   z-index: 1;
   background-color: var(--main-blue);
-  font-size: 32px;
   color: white;
   padding: 1.5em;
 }
 
-nav span {
+nav .left {
   font-family: 'Bungee', cursive;
+  font-size: 32px;
+}
+
+nav span, nav button {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+
+nav button:focus {
+  outline: none;
 }

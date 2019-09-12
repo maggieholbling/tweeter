@@ -69,7 +69,8 @@ $(document).ready(function() {
     if (!$('form textarea').val()) {
       $('.new-tweet .left p')
       .text('No tweet entered')
-      .css("display", "inline-block")
+      .toggle("slow","swing")
+      // .css("display", "inline-block")
 
       return;
     }
@@ -80,8 +81,6 @@ $(document).ready(function() {
       .css("display", "inline-block")
       return;
     }
-    //check
-    //.new-tweet .left p - display: inline-block;
     formData = $(this).serialize();
 
     $.ajax('/tweets', {

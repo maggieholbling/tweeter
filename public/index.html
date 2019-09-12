@@ -21,6 +21,7 @@
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+    <script type="text/javascript" src="/scripts/new-tweet-toggle.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
@@ -28,7 +29,12 @@
 
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <div class="left">
+        <span>tweeter</span>
+      </div>
+      <div class="right">
+          <button><strong>Write</strong> a new tweet</button>
+      </div>
     </nav>
     <div class="spacer">
     </div>
@@ -46,7 +52,6 @@
     <main class="container">
       <!-- Composing new tweet -->
       <section class="new-tweet">
-          <h2>Compose Tweet</h2>
           <form action="/tweets/" method="POST">
             <textarea name="text" placeholder="What are you humming about?"></textarea>
             <div class ="left">
