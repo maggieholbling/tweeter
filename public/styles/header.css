@@ -1,12 +1,15 @@
 header.profile {
+  padding: 10px;
   height: 400px;
   width: 100%;
-  background-color:rgb(222, 128, 9, 0.8);
+  background-color: var(--main-orange);
   background-image: url('/images/asfalt-light.png');
   background-size: cover;
   text-align: center;
 }
 
 header.profile h2 {
+  margin: 0;
+  padding: 5px;
   color: white;
 }

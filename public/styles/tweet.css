@@ -8,7 +8,7 @@
   box-shadow: 7px 7px 5px var(--main-blue);
 }
 
-.tweet:hover .right.hidden{
+.tweet:hover .tweet .right.hidden{
   visibility: visible;
 }
 

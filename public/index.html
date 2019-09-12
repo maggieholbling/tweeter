@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
     <link rel="stylesheet" href="/styles/tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/scroll-button.css" type="text/css" />
 
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
@@ -22,6 +23,7 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
     <script type="text/javascript" src="/scripts/new-tweet-toggle.js"></script>
+    <script type="text/javascript" src="/scripts/scroll-up.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
   </head>
 
@@ -33,7 +35,10 @@
         <span>tweeter</span>
       </div>
       <div class="right">
-          <button><strong>Write</strong> a new tweet</button>
+          <button>
+            <span><strong>Write</strong> a new tweet</span>
+            <i class="fas fa-angle-double-down"></i>
+          </button>
       </div>
     </nav>
     <div class="spacer">
@@ -44,7 +49,7 @@
       </div>
       <br>
       <div>
-          <h2>Your Name</h2>
+          <h2>Knight of Ni</h2>
       </div>
     </header>
 
@@ -56,7 +61,7 @@
             <textarea name="text" placeholder="What are you humming about?"></textarea>
             <div class ="left">
               <input type="submit" value="Tweet">
-              <p>Error Message</p>
+              <span></span>
             </div>
             <span class="counter right">140</span>
             <div class="clear"></div>
@@ -68,6 +73,6 @@
       </container>
 
     </main>
-
+    <i class="fas fa-angle-double-up"></i>
   </body>
 </html>

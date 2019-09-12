@@ -62,23 +62,24 @@ $(document).ready(function() {
   //Hijacking form
   $('form').on('submit', function(event) {
     event.preventDefault();
-    $('.new-tweet .left p')
+    $('.new-tweet .left span')
       .text('')
-      .css("display", "none")
+      .css({'opacity': '0', 'visibility': 'hidden'});
 
     if (!$('form textarea').val()) {
-      $('.new-tweet .left p')
+      $('.new-tweet .left span')
       .text('No tweet entered')
-      // .toggle("slow","swing")
-      .css("display", "inline-block")
+      .addClass('appear')
+      .css({'opacity': '1', 'visibility': 'visible'});
 
       return;
     }
 
     if ($('form textarea').val().length > 140) {
-      $('.new-tweet .left p')
+      $('.new-tweet .left span')
       .text('Max length exceeded')
-      .css("display", "inline-block")
+      .addClass('appear')
+      .css({'opacity': '1', 'visibility': 'visible'});
       return;
     }
     formData = $(this).serialize();

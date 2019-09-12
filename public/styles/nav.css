@@ -13,7 +13,7 @@ nav .left {
   font-size: 32px;
 }
 
-nav span, nav button {
+nav .left span {
   display: inline-block;
   vertical-align: middle;
 }
@@ -23,8 +23,25 @@ nav button {
   background: none;
   cursor: pointer;
   color: white;
+  transition: opacity, 200ms;
 }
 
 nav button:focus {
   outline: none;
+}
+
+.fas.fa-angle-double-down {
+  display: block;
+  opacity: 1;
+  color: var(--main-orange);
+  animation-name: upDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes upDown {
+  0% { opacity: 1; }
+  100% { transform: translateY(10px); opacity: 0.8; }
 }
