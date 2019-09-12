@@ -69,8 +69,8 @@ $(document).ready(function() {
     if (!$('form textarea').val()) {
       $('.new-tweet .left p')
       .text('No tweet entered')
-      .toggle("slow","swing")
-      // .css("display", "inline-block")
+      // .toggle("slow","swing")
+      .css("display", "inline-block")
 
       return;
     }
