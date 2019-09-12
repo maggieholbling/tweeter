@@ -1,0 +1,13 @@
+.fas.fa-angle-double-up {
+  position: fixed;
+  bottom: 15px;
+  right:15px;
+  size: 3x;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 50px;
+  color: var(--main-blue);
+  transition: opacity, 300ms;
+}
