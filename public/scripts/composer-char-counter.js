@@ -1,27 +1,6 @@
 $(document).ready(function() {
-  // $('.new-tweet textarea').on('change',() => {
-  //   console.log('works3');
-  // });
 
-  // $('.new-tweet textarea').on('keydown',() => {
-  //   console.log('works1');
-  // });
-
-  // $('.new-tweet textarea').on('keyup',() => {
-  //   console.log('works2');
-  // });
-
-  // $('.new-tweet textarea').on('blur',() => {
-  //   console.log('works4');
-  // });
-
-  // $('.new-tweet textarea').on('keyup',function() {
-  //   console.log($(this).val());
-  // });
-
-
-  $('.new-tweet textarea').on('keyup',function() {
-    //$(this).val().length
+  $('.new-tweet textarea').on('input',function() {
     const remainingChars = 140 - $(this).val().length;
 
     if (remainingChars < 0) {
