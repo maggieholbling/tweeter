@@ -17,9 +17,11 @@ Functions:
 ## Screenshots
 
 Desktop view - tweets list
+
 !["Screenshot of desktop view - tweets list"](https://github.com/maggieholbling/tweeter/blob/master/docs/desktop-view.png?raw=true)
 
 Tablet view - tweet creation
+
 !["Screenshot of tablet view - tweet creation"](https://github.com/maggieholbling/tweeter/blob/master/docs/tablet-view.png?raw=true)
 
 ## Getting Started
