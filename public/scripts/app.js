@@ -11,10 +11,10 @@ $(document).ready(function() {
     const avatars = object.user.avatars;
     const handle = object.user.handle;
     const text = object.content.text;
-    const timestamp = Math.round((Date.now() - object.created_at) / (1000*60*60*24));
+    const timestamp = Math.round((Date.now() - object.created_at) / (1000 * 60 * 60 * 24));
     
     const article = $(
-    `<article class="tweet">
+      `<article class="tweet">
     <header>
       <div class="left">
         <img src="${avatars}" alt="Avatar" height="42" width="42">
@@ -39,7 +39,7 @@ $(document).ready(function() {
     <div class="clear"></div>
   </article>`);
     return article;
-  }
+  };
 
   const renderTweets = function(arrayOfObjects) {
     $('container').text("");
@@ -51,7 +51,7 @@ $(document).ready(function() {
   const loadTweets = () => {
     $('form textarea').val("");
     $.ajax('/tweets')
-    .then(renderTweets)
+      .then(renderTweets);
     // .catch(err => {
     //   alert('Error loading tweets')
     // });
@@ -68,18 +68,18 @@ $(document).ready(function() {
 
     if (!$('form textarea').val()) {
       $('.new-tweet .left span')
-      .text('No tweet entered')
-      .addClass('appear')
-      .css({'opacity': '1', 'visibility': 'visible'});
+        .text('No tweet entered')
+        .addClass('appear')
+        .css({'opacity': '1', 'visibility': 'visible'});
 
       return;
     }
 
     if ($('form textarea').val().length > 140) {
       $('.new-tweet .left span')
-      .text('Max length exceeded')
-      .addClass('appear')
-      .css({'opacity': '1', 'visibility': 'visible'});
+        .text('Max length exceeded')
+        .addClass('appear')
+        .css({'opacity': '1', 'visibility': 'visible'});
       return;
     }
     formData = $(this).serialize();
@@ -88,7 +88,7 @@ $(document).ready(function() {
       method: 'POST',
       data: formData
     })
-    .then(loadTweets)
+      .then(loadTweets);
     // .catch(err => {
     //   alert('Error posting tweet')
     // });
