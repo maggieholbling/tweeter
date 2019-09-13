@@ -30,7 +30,7 @@ $(document).ready(function() {
       <div class="left">
         <p>${timestamp} days ago</p>
       </div>
-      <div class="right">
+      <div class="right hidden">
         <i class="fab fa-font-awesome-flag"></i>
         <i class="fas fa-retweet"></i>
         <i class="fas fa-heart"></i>

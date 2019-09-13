@@ -1,5 +1,5 @@
 .tweet {
-  margin: 70px 0px;
+  margin: 50px 0px;
   padding: 10px;
   border: 5px solid var(--main-dark-grey);
 }
@@ -8,7 +8,11 @@
   box-shadow: 7px 7px 5px var(--main-blue);
 }
 
-.tweet:hover .tweet .right.hidden{
+.tweet:hover header div.right.hidden{
+  visibility: visible;
+}
+
+.tweet:hover footer div.right.hidden {
   visibility: visible;
 }
 
@@ -16,6 +20,7 @@
   padding: 20px 13px;
   border-bottom: 5px solid var(--main-dark-grey);
   text-align: left;
+  word-break: break-word;
   overflow: auto;
 }
 

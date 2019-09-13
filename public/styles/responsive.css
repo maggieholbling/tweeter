@@ -1,0 +1,45 @@
+/* Tablet Styles */
+@media only screen and (min-width: 768px) {
+  .spacer {
+    display: block;
+  }
+
+  nav {
+    background-color: var(--main-blue);
+  }
+
+  header.profile {
+    display: flex;
+    max-width: 450px;
+    flex-shrink: 2;
+    height: 450px;
+    margin: 50px 50px 0 0;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile div:first-child {
+    margin-top: 0;
+  }
+
+  .flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  .main {
+    margin: 50px 0 0 50px;
+    flex-basis: 600px;
+    flex-shrink: 1;
+  }
+}
+
+/* Desktop styles */
+@media only screen and (min-width: 1024px) {
+
+
+}
